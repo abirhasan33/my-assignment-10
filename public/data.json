@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "ENGINE DIAGNOSTIC",
+        "Cemara": "HD 4k camera",
+        "description": "Beautiful photogarpher",
+        "Phone": "+008843721",
+        "img": "./images/camera-.jpg"
+    },
+    {
+        "id": 2,
+        "name": "WHEEL ALIGNMENT",
+        "Cemara": "HD 12k ulta",
+        "description": "Beautiful photogarpher",
+        "Phone": "++0874632",
+        "img": "./images/camera-1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "OIL CHANGING",
+        "Cemara": "Lenavu v3 HD camera",
+        "description": "Beautiful photogarpher",
+        "Phone": "+0799901551",
+        "img": "./images/camera-2.webp"
+    },
+    {
+        "id": 4,
+        "name": "BRAKE REPARING",
+        "Cemara": "HD Kenon Photo",
+        "description": "Beautiful photogarpher",
+        "Phone": "+0731901551",
+        "img": "./images/camera-3.jpg"
+    },
+    {
+        "id": 5,
+        "name": "WASH AND GLASSING",
+        "Cemara": "HD 4k camera ul.Xl",
+        "description": "Beautiful photogarpher",
+        "Phone": "+073151306",
+        "img": "./images/camera-5.webp"
+    },
+    {
+        "id": 6,
+        "name": "COMPLETE ANALYSIS",
+        "Cemara": "HD 8k camera",
+        "Phone": "01608889768",
+        "description": "Beautiful photogarpher",
+        "img": "./images/camera-6.jpg"
+    }
+]

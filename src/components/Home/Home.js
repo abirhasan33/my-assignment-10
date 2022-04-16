@@ -1,9 +1,13 @@
 import React from 'react';
+import Banar from '../Banar/Banar';
+import Serivces from '../Serivces/Serivces';
+
 
 const Home = () => {
     return (
         <div>
-            <h1 className='bg-info'>Home</h1>
+            <Banar></Banar>
+            <Serivces></Serivces>
         </div>
     );
 };
