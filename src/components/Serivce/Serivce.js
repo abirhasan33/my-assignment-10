@@ -16,7 +16,7 @@ const Serivce = ({serivce}) => {
             <p className='p m-0'>{Cemara}</p>
             <small className='phone'>Phone: {Phone}</small>
             <p><small>{description}</small></p>
-            <button onClick={()=>navigetToServiseDetail(id)} className='button'>Book: {name}</button>
+            <button onClick={()=>navigetToServiseDetail(id)} className='button'>Booknow: {name}</button>
         </div>
     );
 };

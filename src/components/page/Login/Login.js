@@ -4,7 +4,8 @@ import '../../../styles/Login.css';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 const Login = () => {
@@ -76,6 +77,14 @@ const Login = () => {
             }
         },[hookError])
 
+        const navigate = useNavigate();
+        const location = useLocation();
+        const from = location.state?.from?.pathname || "/";
+        useEffect(()=> {
+            if(user){
+                navigate(from)
+            }
+        },[user])
 
     return (
         <div className='login-container'>
@@ -86,9 +95,10 @@ const Login = () => {
                 <input type="password" placeholder='Password' onChange={handlePasswordChange}/>
                 {errors?.password && <p className='error-message'>{errors.password}</p>}
                 <button>Login</button>
+                <p className='pt-2 px-2 text-decoration-none'>Don't have an account? <Link to="/register">Register</Link></p>
                 <ToastContainer />
-                <p>Don't have an account? <Link to="/register">Register</Link></p>
             </form>
+                <SocialLogin></SocialLogin>
         </div>
     );
 };

@@ -2,12 +2,12 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='bg-info  w-full py-5 mt-5 sticky="bottom"'>
+    <footer className='bg-info  w-full py-5 mt-5 ' sticky="bottom">
       <div className='max-w-screen-xl mx-auto px-4'>
-        <div className='d-flex  justify-content-center'>
+        <div className='d-flex  justify-content-center '>
           <a
-            href='https://github.com/shakilahmedatik'
-            className='text-gray-400 hover:text-gray-800 transition-colors duration-200'
+            href='https://www.facebook.com/abir.pubg.378'
+            className='px-2'
           >
             <svg
               width='20'
@@ -21,8 +21,8 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href='https://github.com/shakilahmedatik'
-            className='text-gray-400 hover:text-gray-800 transition-colors duration-200'
+            href='https://github.com/abirhasan33'
+            className='px-2'
           >
             <svg
               width='20'
@@ -36,8 +36,8 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href='https://github.com/shakilahmedatik'
-            className='text-gray-400 hover:text-gray-800 transition-colors duration-200'
+            href='https://github.com/abirhasan33'
+            className='px-2'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -51,8 +51,8 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href='https://github.com/shakilahmedatik'
-            className='text-gray-400 hover:text-gray-800 transition-colors duration-200'
+            href='https://www.facebook.com/abir.pubg.378'
+            className='px-2 pt-0'
           >
             <svg
               width='20'
@@ -66,8 +66,8 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href='https://github.com/shakilahmedatik'
-            className='text-gray-400 hover:text-gray-800 transition-colors duration-200'
+            href='https://www.facebook.com/abir.pubg.378'
+            className='px-2 pt-0'
           >
             <svg
               width='20'
@@ -81,8 +81,8 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <div className='text-center text-cyan-600 pt-10 sm:pt-12 font-light flex items-center justify-center'>
-          All Rights Reserved By &copy; Crypto Cafe | 2022-2026
+        <div className='text-center pt-2 font-light flex items-center justify-center'>
+          All Rights Reserved By &copy; Our Photogarpher | 2022-2026
         </div>
       </div>
     </footer>

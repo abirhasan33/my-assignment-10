@@ -11,10 +11,14 @@ import Checkout from './components/Checkout/Checkout';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
+import { createContext, useState } from "react";
 
+export const BlogContext = createContext()
 function App() {
+  const [serivces, setSerivces] = useState([]);
   return (
     <div>
+      <BlogContext.Provider value={[serivces, setSerivces]}>
       <Heder></Heder>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -29,7 +33,8 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
-    </div>
+      </BlogContext.Provider>
+      </div>
   );
 }
 

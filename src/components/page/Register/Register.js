@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import auth from '../../../firebase.init';
 import '../../../styles/Login.css';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast, Icons } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 const Register = () => {
@@ -21,12 +22,14 @@ const Register = () => {
         general: "",
     });
 
+    const [showPass, setShowpass] = useState(false);
+
       const [
         createUserWithEmailAndPassword,
         user,
         loading,
         hookError,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
 
 
     const handleEmailChange = (e) => {
@@ -88,6 +91,8 @@ const Register = () => {
             }
         },[hookError])
 
+        
+
         const navigate = useNavigate();
         const location = useLocation();
         const from = location.state?.from?.pathname || "/";
@@ -104,12 +109,17 @@ const Register = () => {
             <form className='login-form' onSubmit={handleLogin}>
                 <input type="text" placeholder='Your Email' onChange={handleEmailChange}/>
                 {errors?.email && <p className='error-message'>{errors.email}</p>}
-                <input type="password" placeholder='Password' onChange={handlePasswordChange}/>
-                {errors?.password && <p className='error-message'>{errors.password}</p>}
+                <div className="relative">
+                    <input type={showPass? "text" : "password"} placeholder="password" onChange={handlePasswordChange} />
+                    <span onClick={()=> setShowpass(!showPass)} className="absolute top-3 p-5">❗️</span>
+                    {errors?.password && <p className="error-message">{errors.password}</p>}
+                </div>
                 <input type="password" placeholder='Confirm Password' onChange={handleConfirmPasswordChange}/>
                 <button>Login</button>
                 <ToastContainer />
+                <p className='pt-2 px-2 text-decoration-none'>Don't have an account? <Link to="/login">Logn</Link></p>
             </form>
+                <SocialLogin></SocialLogin>
         </div>
     );
 };

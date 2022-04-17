@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
+import { BlogContext } from '../../App';
 import Serivce from '../Serivce/Serivce';
 import './Serivces.css'
 
@@ -7,7 +8,7 @@ import './Serivces.css'
 
 const Serivces = () => {
 
-    const [serivces, setSerivces] = useState([]);
+    const [serivces, setSerivces] = useContext(BlogContext);
 
     useEffect(()=> {
         fetch('data.json')
@@ -20,7 +21,7 @@ const Serivces = () => {
             <h1 id='service' className='serivces-titel my-5'>Our Serivces</h1>
             <div className='serivces-container container'>
             {
-                serivces.map(serivce=> <Serivce key={serivce.id} serivce={serivce}></Serivce>)
+                serivces.map((serivce, index) => (<Serivce key={index} serivce={serivce}></Serivce>))
             }
             </div>
         </div>
