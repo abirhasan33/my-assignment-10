@@ -1,9 +1,13 @@
 .serivces{
+    margin: 0;
+    padding: 0;
     border-radius: 20px;
     padding-bottom: 50px;
     text-align: center;
-    box-shadow: 0px 0px 5px 5px rgba(20, 51, 191, 0.177);
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced196, -14px -14px 20px rgba(255, 255, 255, 0.446);
 }
+
 .button{
     padding: 7px 20px;
     background-color: rgba(0, 0, 255, 0.634);
@@ -28,7 +32,9 @@
 .images{
     width: 350px;
     height: 300px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+    padding: 0;
 }
 .name{
     font-style:italic;

@@ -111,7 +111,7 @@ const Register = () => {
                 {errors?.email && <p className='error-message'>{errors.email}</p>}
                 <div className="relative">
                     <input type={showPass? "text" : "password"} placeholder="password" onChange={handlePasswordChange} />
-                    <span onClick={()=> setShowpass(!showPass)} className="absolute top-3 p-5">❗️</span>
+                    <span onClick={()=> setShowpass(!showPass)} className="absolute top-3 right-5">❗️</span>
                     {errors?.password && <p className="error-message">{errors.password}</p>}
                 </div>
                 <input type="password" placeholder='Confirm Password' onChange={handleConfirmPasswordChange}/>

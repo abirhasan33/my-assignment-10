@@ -1,0 +1,27 @@
+[
+    {
+        "name": "ENGINE DIAGNOSTIC",
+        "img": "./images/camera-.jpg"
+
+    },
+    {
+        "name": "WHEEL ALIGNMENT",
+        "img": "./images/camera-1.jpg"
+    },
+    {
+        "name": "OIL CHANGING",
+        "img": "./images/camera-2.webp"
+    },
+    {
+        "name": "BRAKE REPARING",
+        "img": "./images/camera-3.jpg"
+    },
+    {
+        "name": "WASH AND GLASSING",
+        "img": "./images/camera-5.webp"
+    },
+    {
+        "name": "COMPLETE ANALYSIS",
+        "img": "./images/camera-6.jpg"
+    }
+]

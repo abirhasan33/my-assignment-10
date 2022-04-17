@@ -1,0 +1,32 @@
+.serivces-cukout{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+@media only screen and (max-width:576px) {
+    .serivces-cukout{
+        grid-template-columns: repeat(1, 1fr);
+    }    
+    .serivces-img{
+        width: 300px;
+        height: 250px;
+    }
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 992px){
+    .serivces-cukout{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.serivces-img{
+    width: 250px;
+    height: 150px;
+    border-radius: 4px;
+}
+.serivces-images{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}

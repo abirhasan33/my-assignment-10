@@ -18,12 +18,12 @@ const Banar = () => {
         <Carousel.Item>
           <img
             className="d-block w-100" style={{height: "500px"}}
-            src={images1}
+            src={images3}
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h1 className='serivces-titel text-warning py-2'>Welcome To Our Photogarpher</h1>
+            <p className='py-3'>Choic now Photogarpher Click the button Photogarpher detail information, The took many butyiful pactures. you can tack them from pahotgraphy, you can they them for days. one day I took many betyifull picyurs</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -34,22 +34,20 @@ const Banar = () => {
           />
   
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h1 className='serivces-titel py-2'>Welcome To Our Photogarpher</h1>
+            <p className='py-3'>Choic now Photogarpher Click the button Photogarpher detail information, The took many butyiful pactures. you can tack them from pahotgraphy, you can they them for days. one day I took many betyifull picyurs</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100" style={{height: "500px"}}
-            src={images3}
+            src={images1}
             alt="Third slide"
           />
   
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+          <h1 className='serivces-titel text-warning py-2'>Welcome To Our Photogarpher</h1>
+            <p className='py-3'>Choic now Photogarpher Click the button Photogarpher detail information, The took many butyiful pactures. you can tack them from pahotgraphy, you can they them for days. one day I took many betyifull picyurs</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
