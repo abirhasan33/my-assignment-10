@@ -7,7 +7,7 @@ const Serivce = ({serivce}) => {
     console.log(serivce)
     const nevigate = useNavigate();
     const navigetToServiseDetail = id => {
-        nevigate(`/about/${id}`);
+        nevigate(`/service/${id}`);
     }
     return (
         <div className='serivces'>

@@ -27,7 +27,6 @@ const Heder = () => {
             </Nav>
             <Nav className="customlink">
               <Nav.Link as={Link} to="/home">Home</Nav.Link>
-              <Nav.Link as={Link} to="/checkout">Checkout</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
               <Nav.Link as={Link} to="/Login">Login</Nav.Link>
               {/* {
