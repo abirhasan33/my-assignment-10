@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import auth from '../../../firebase.init';
 import '../../../styles/Login.css';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { ToastContainer, toast, Icons } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../../Loading/Loading';
 
 
 const Register = () => {
@@ -13,6 +14,7 @@ const Register = () => {
     const [userInfo, setUserInfo] = useState({
         email: "",
         password: "",
+        name: "",
         confirmPassword: "",
     })
 
@@ -30,6 +32,7 @@ const Register = () => {
         loading,
         hookError,
       ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+      const [updateProfile, updating, error1] = useUpdateProfile(auth);
 
 
     const handleEmailChange = (e) => {
@@ -71,9 +74,11 @@ const Register = () => {
         }
         }
 
-        const handleLogin = (e) => {
+        const handleLogin = async (e) => {
             e.preventDefault();
-            createUserWithEmailAndPassword(userInfo.email, userInfo.password);
+            await createUserWithEmailAndPassword(userInfo.email, userInfo.password);
+            await updateProfile({ displayName: userInfo.name });
+            navigate('/home');
         }
 
         useEffect(()=>{
@@ -101,20 +106,23 @@ const Register = () => {
                 navigate(from)
             }
         },[user])
-
+        if(loading || updating){
+            return <Loading></Loading>
+          }
 
     return (
         <div className='login-container'>
             <div className="login-title">Please Register</div>
             <form className='login-form' onSubmit={handleLogin}>
-                <input type="text" placeholder='Your Email' onChange={handleEmailChange}/>
+                <input type="text" name="name" placeholder='Your name'/>
+                <input type="text" name="enail" placeholder='Your Email' onChange={handleEmailChange}/>
                 {errors?.email && <p className='error-message'>{errors.email}</p>}
                 <div className="relative">
-                    <input type={showPass? "text" : "password"} placeholder="password" onChange={handlePasswordChange} />
+                    <input type={showPass? "text" : "password"} name="password" placeholder="password" onChange={handlePasswordChange} />
                     <span onClick={()=> setShowpass(!showPass)} className="absolute top-3 right-5"></span>
                     {errors?.password && <p className="error-message">{errors.password}</p>}
                 </div>
-                <input type="password" placeholder='Confirm Password' onChange={handleConfirmPasswordChange}/>
+                <input type="password" name="password" placeholder='Confirm Password' onChange={handleConfirmPasswordChange}/>
                 <button>Login</button>
                 <ToastContainer />
                 <p className='pt-2 px-2 text-decoration-none'>Don't have an account? <Link to="/login">Logn</Link></p>

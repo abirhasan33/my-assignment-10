@@ -18,7 +18,7 @@ const Serivces = () => {
 
     return (
         <div>
-            <h1 id='service' className='serivces-titel my-5'>Our Serivces</h1>
+            <h1 id='service' className='serivces-titel my-5'>My Serivces</h1>
             <div className='serivces-container container'>
             {
                 serivces.map((serivce, index) => (<Serivce key={index} serivce={serivce}></Serivce>))

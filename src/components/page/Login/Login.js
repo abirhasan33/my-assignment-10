@@ -64,6 +64,7 @@ const Login = () => {
     signInWithEmailAndPassword(userInfo.email, userInfo.password);
   };
 
+
   useEffect(() => {
     if (hookError) {
       switch (hookError?.code) {

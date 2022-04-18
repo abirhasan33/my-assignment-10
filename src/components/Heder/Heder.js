@@ -23,7 +23,7 @@ const Heder = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-            <Nav.Link href="home#service">Our Service</Nav.Link>
+            <Nav.Link href="home#service">My Service</Nav.Link>
             </Nav>
             <Nav className="customlink">
               <Nav.Link as={Link} to="/home">Home</Nav.Link>

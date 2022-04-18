@@ -24,7 +24,7 @@ const Banar = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h1 className='serivces-titel text-warning py-2'>Welcome To Our Photogarpher</h1>
+            <h1 className='serivces-titel text-warning py-2'>Welcome To My Photogarpher</h1>
             <p className='py-3'>Choic now Photogarpher Click the button Photogarpher detail information, The took many butyiful pactures. you can tack them from pahotgraphy, you can they them for days. one day I took many betyifull picyurs. I have beautiful photographer || I have been travleing from Photographer from 2014 to 2022 .</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -36,7 +36,7 @@ const Banar = () => {
           />
   
           <Carousel.Caption>
-          <h1 className='serivces-titel text-warning py-2'>Welcome To Our Photogarpher</h1>
+          <h1 className='serivces-titel text-warning py-2'>Welcome To My Photogarpher</h1>
             <p className='py-3'>Choic now Photogarpher Click the button Photogarpher detail information, The took many butyiful pactures. you can tack them from pahotgraphy, you can they them for days. one day I took many betyifull picyurs. I have beautiful photographer || I have been travleing from Photographer from 2014 to 2022 .</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -48,7 +48,7 @@ const Banar = () => {
           />
   
           <Carousel.Caption>
-          <h1 className='serivces-titel py-2 text-warning'>Welcome To Our Photogarpher</h1>
+          <h1 className='serivces-titel py-2 text-warning'>Welcome To My Photogarpher</h1>
             <p className='py-3'>Choic now Photogarpher Click the button Photogarpher detail information, The took many butyiful pactures. you can tack them from pahotgraphy, you can they them for days. one day I took many betyifull picyurs. I have beautiful photographer || I have been travleing from Photographer from 2014 to 2022 .</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -60,7 +60,7 @@ const Banar = () => {
           />
   
           <Carousel.Caption>
-          <h1 className='serivces-titel py-2 text-warning'>Welcome To Our Photogarpher</h1>
+          <h1 className='serivces-titel py-2 text-warning'>Welcome To My Photogarpher</h1>
             <p className='py-3'>Choic now Photogarpher Click the button Photogarpher detail information, The took many butyiful pactures. you can tack them from pahotgraphy, you can they them for days. one day I took many betyifull picyurs. I have beautiful photographer || I have been travleing from Photographer from 2014 to 2022 .</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -72,7 +72,7 @@ const Banar = () => {
           />
   
           <Carousel.Caption>
-          <h1 className='serivces-titel py-2 text-warning'>Welcome To Our Photogarpher</h1>
+          <h1 className='serivces-titel py-2 text-warning'>Welcome To My Photogarpher</h1>
             <p className='py-3'>Choic now Photogarpher Click the button Photogarpher detail information, The took many butyiful pactures. you can tack them from pahotgraphy, you can they them for days. one day I took many betyifull picyurs. I have beautiful photographer || I have been travleing from Photographer from 2014 to 2022 .</p>
           </Carousel.Caption>
         </Carousel.Item>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Checkoutpage from '../Checkoutpage/Checkoutpage';
-import { ToastContainer, toast, Icons } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import './Checkout.css';
 
 const Checkout = () => {
@@ -11,7 +11,7 @@ const Checkout = () => {
         .then(data => setSerivces(data));
     },[])
     if('/checkout'){
-        toast("Thanks for coming Check-out")
+        toast("Thanks for coming Check-out page")
     }
 
     return (
