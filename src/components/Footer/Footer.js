@@ -82,7 +82,7 @@ const Footer = () => {
           </a>
         </div>
         <div className='text-center pt-2 font-light flex items-center justify-center'>
-          All Rights Reserved By &copy; Our Photogarpher | 2022-2026
+          All Rights Reserved By &copy; Our Photogarpher | 2014-2022
         </div>
       </div>
     </footer>

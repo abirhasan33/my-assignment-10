@@ -29,7 +29,7 @@ const Heder = () => {
               <Nav.Link as={Link} to="/home">Home</Nav.Link>
               <Nav.Link as={Link} to="/checkout">Checkout</Nav.Link>
               <Nav.Link as={Link} to="/about">About me</Nav.Link>
-              <Nav.Link as={Link} to="/about">Cunt</Nav.Link>
+              <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
               {
                 user?
                 <button className="btn btn-link text-black text-decoration-none" onClick={handleSignOut}>sign out</button>

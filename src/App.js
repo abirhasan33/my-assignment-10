@@ -12,6 +12,7 @@ import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 import { createContext, useState } from "react";
+import Blogs from './components/Blogs/Blogs';
 
 export const BlogContext = createContext()
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/service/:serviceId' element={<ServiceDetail></ServiceDetail>}></Route>
         <Route path='/checkout' element={<RequireAuth>
           <Checkout></Checkout>
