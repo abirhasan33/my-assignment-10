@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Checkoutpage from '../Checkoutpage/Checkoutpage';
+import { ToastContainer, toast, Icons } from 'react-toastify';
 import './Checkout.css';
 
 const Checkout = () => {
@@ -9,12 +10,16 @@ const Checkout = () => {
         .then(res => res.json())
         .then(data => setSerivces(data));
     },[])
+    if('/checkout'){
+        toast("Thanks for coming Check-out")
+    }
 
     return (
         <div className='serivces-cukout'>
             {
                 serivces.map(serivces => <Checkoutpage key={serivces} serivces={serivces}></Checkoutpage>)
             }
+            <ToastContainer />
         </div>
     );
 };

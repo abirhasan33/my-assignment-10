@@ -8,6 +8,14 @@
     box-shadow: 14px 14px 20px #cbced196, -14px -14px 20px rgba(255, 255, 255, 0.446);
 }
 
+.serivces:hover {
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.2),
+      -10px -5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    /* transform: skew(3deg, 3deg); */
+    background-color: #b5c6d2bc;
+  }
+
 .button{
     padding: 7px 20px;
     background-color: rgba(0, 0, 255, 0.634);
