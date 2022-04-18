@@ -7,7 +7,7 @@ import './About.css';
 const About = () => {
     const [serivces, setSerivces] = useState([]);
     useEffect(()=> {
-        fetch('Photo.json')
+        fetch('photo.json')
         .then(res => res.json())
         .then(data => setSerivces(data));
     },[])
